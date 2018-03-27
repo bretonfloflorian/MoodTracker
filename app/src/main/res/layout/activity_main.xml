@@ -1,20 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="portrait"
     tools:context="com.breton.florian.moodtracker.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:contentDescription="@string/image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="150dp"
+                android:paddingBottom="150dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/faded_red"
+                app:srcCompat="@drawable/smiley_sad"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:contentDescription="@string/image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="150dp"
+                android:paddingBottom="150dp"
+                android:layout_weight="1"
+                android:background="@color/warm_grey"
+                app:srcCompat="@drawable/smiley_disappointed"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:contentDescription="@string/image3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="150dp"
+                android:paddingBottom="150dp"
+                android:layout_weight="1"
+                android:background="@color/cornflower_blue_65"
+                app:srcCompat="@drawable/smiley_normal"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:contentDescription="@string/image4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="150dp"
+                android:paddingBottom="150dp"
+                android:layout_weight="1"
+                android:background="@color/light_sage"
+                app:srcCompat="@drawable/smiley_happy"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:contentDescription="@string/image5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="150dp"
+                android:paddingBottom="150dp"
+                android:layout_weight="1"
+                android:background="@color/banana_yellow"
+                app:srcCompat="@drawable/smiley_super_happy"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MoodTracker</string>
+    <string name="image1">MoodTracker</string>
+    <string name="image2">MoodTracker</string>
+    <string name="image3">MoodTracker</string>
+    <string name="image4">MoodTracker</string>
+    <string name="image5">MoodTracker</string>
 </resources>
