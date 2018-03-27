@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -53,9 +54,6 @@ public class MainActivity extends AppCompatActivity {
         mImageHumour4.setTag(3);
         mImageHumour5.setTag(4);
 
-    }
-
-    private void commentaire() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setTitle("Commentaire");
@@ -73,11 +71,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         builder.setNegativeButton("ANNULER", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
 
         final AlertDialog ad=builder.create();
 
@@ -89,6 +87,34 @@ public class MainActivity extends AppCompatActivity {
         mMessage5 = (ImageView) findViewById(R.id.image_message_5);
 
         mMessage1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad.show();
+            }
+        });
+
+        mMessage2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad.show();
+            }
+        });
+
+        mMessage3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad.show();
+            }
+        });
+
+        mMessage4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ad.show();
+            }
+        });
+
+        mMessage5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ad.show();
