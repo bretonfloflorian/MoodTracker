@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">MoodTracker</string>
-    <string name="image1">MoodTracker</string>
-    <string name="image2">MoodTracker</string>
-    <string name="image3">MoodTracker</string>
-    <string name="image4">MoodTracker</string>
-    <string name="image5">MoodTracker</string>
-    <string name="historic1">MoodTracker</string>
-    <string name="historic2">MoodTracker</string>
-    <string name="historic3">MoodTracker</string>
-    <string name="historic4">MoodTracker</string>
-    <string name="historic5">MoodTracker</string>
-    <string name="message1">MoodTracker</string>
-    <string name="message2">MoodTracker</string>
-    <string name="message3">MoodTracker</string>
-    <string name="message4">MoodTracker</string>
-    <string name="message5">MoodTracker</string>
+    <string name="image1">Image</string>
+    <string name="image2">Image</string>
+    <string name="image3">Image</string>
+    <string name="image4">Image</string>
+    <string name="image5">Image</string>
+    <string name="historic1">Historic</string>
+    <string name="historic2">Historic</string>
+    <string name="historic3">Historic</string>
+    <string name="historic4">Historic</string>
+    <string name="historic5">Historic</string>
+    <string name="message1">Message</string>
+    <string name="message2">Message</string>
+    <string name="message3">Message</string>
+    <string name="message4">Message</string>
+    <string name="message5">Message</string>
 
 </resources>
