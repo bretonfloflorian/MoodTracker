@@ -10,4 +10,10 @@
     <string name="historic3">MoodTracker</string>
     <string name="historic4">MoodTracker</string>
     <string name="historic5">MoodTracker</string>
+    <string name="message1">MoodTracker</string>
+    <string name="message2">MoodTracker</string>
+    <string name="message3">MoodTracker</string>
+    <string name="message4">MoodTracker</string>
+    <string name="message5">MoodTracker</string>
+
 </resources>

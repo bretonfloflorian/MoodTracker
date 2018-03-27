@@ -126,6 +126,61 @@
                 android:layout_alignParentEnd="true"
                 android:padding="30dp"/>
 
+            <ImageView
+                android:id="@+id/image_message_1"
+                android:contentDescription="@string/message1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_note_add_black"
+                android:layout_above="@+id/image_humour_2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="30dp"/>
+
+            <ImageView
+                android:id="@+id/image_message_2"
+                android:contentDescription="@string/message2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_note_add_black"
+                android:layout_above="@+id/image_humour_3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="30dp"/>
+
+            <ImageView
+                android:id="@+id/image_message_3"
+                android:contentDescription="@string/message3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_note_add_black"
+                android:layout_above="@+id/image_humour_4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="30dp"/>
+
+            <ImageView
+                android:id="@+id/image_message_4"
+                android:contentDescription="@string/message4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_note_add_black"
+                android:layout_above="@+id/image_humour_5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="30dp"/>
+
+            <ImageView
+                android:id="@+id/image_message_5"
+                android:contentDescription="@string/message5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_note_add_black"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="30dp"/>
+
         </RelativeLayout>
 
     </ScrollView>
