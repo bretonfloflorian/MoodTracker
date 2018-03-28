@@ -1,6 +1,7 @@
 package com.breton.florian.moodtracker;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -43,12 +44,6 @@ public class MainActivity extends AppCompatActivity {
         mImageHumour3 = (ImageView) findViewById(R.id.image_humour_3);
         mImageHumour4 = (ImageView) findViewById(R.id.image_humour_4);
         mImageHumour5 = (ImageView) findViewById(R.id.image_humour_5);
-
-        mMessage1 = (ImageView) findViewById(R.id.image_message_1);
-        mMessage2 = (ImageView) findViewById(R.id.image_message_2);
-        mMessage3 = (ImageView) findViewById(R.id.image_message_3);
-        mMessage4 = (ImageView) findViewById(R.id.image_message_4);
-        mMessage5 = (ImageView) findViewById(R.id.image_message_5);
 
         mImageHumour1.setTag(0);
         mImageHumour2.setTag(1);
@@ -142,6 +137,55 @@ public class MainActivity extends AppCompatActivity {
                 ad.show();
             }
         });
+
+        //BUTTON LAUNCH HISTORIC ACTIVTY
+        mHistoric1 = (ImageView) findViewById(R.id.image_historic_1);
+        mHistoric2 = (ImageView) findViewById(R.id.image_historic_2);
+        mHistoric3 = (ImageView) findViewById(R.id.image_historic_3);
+        mHistoric4 = (ImageView) findViewById(R.id.image_historic_4);
+        mHistoric5 = (ImageView) findViewById(R.id.image_historic_5);
+
+        mHistoric1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent historicActivity = new Intent(MainActivity.this, HistoricActivity.class);
+                startActivity(historicActivity);
+            }
+        });
+
+        mHistoric2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent historicActivity = new Intent(MainActivity.this, HistoricActivity.class);
+                startActivity(historicActivity);
+            }
+        });
+
+        mHistoric3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent historicActivity = new Intent(MainActivity.this, HistoricActivity.class);
+                startActivity(historicActivity);
+            }
+        });
+
+        mHistoric4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent historicActivity = new Intent(MainActivity.this, HistoricActivity.class);
+                startActivity(historicActivity);
+            }
+        });
+
+        mHistoric5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent historicActivity = new Intent(MainActivity.this, HistoricActivity.class);
+                startActivity(historicActivity);
+            }
+        });
+
+
     }
 
 }
