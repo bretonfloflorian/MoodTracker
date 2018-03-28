@@ -4,6 +4,8 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -53,6 +55,26 @@ public class MainActivity extends AppCompatActivity {
         mImageHumour3.setTag(2);
         mImageHumour4.setTag(3);
         mImageHumour5.setTag(4);
+
+        //ADAPT APP TO SIZE SCREEN
+
+        int w = mImageHumour1.getWidth();
+        int h = mImageHumour1.getHeight();
+
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        int height = displayMetrics.heightPixels;
+        int width = displayMetrics.widthPixels;
+
+        int sizeh = ((height-h)/3)-44;
+
+        mImageHumour1.setPadding(0, sizeh, 0, sizeh);
+        mImageHumour2.setPadding(0, sizeh, 0, sizeh);
+        mImageHumour3.setPadding(0, sizeh, 0, sizeh);
+        mImageHumour4.setPadding(0, sizeh, 0, sizeh);
+        mImageHumour5.setPadding(0, sizeh, 0, sizeh);
+
+        //COMMENT BOX
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
